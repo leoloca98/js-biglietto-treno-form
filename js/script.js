@@ -1,8 +1,8 @@
 /*
 
 *Quali campi inserire nel form:
-Una casella di testo per il form del passeggero
-Una casella numerica per i km
+// Una casella di testo per il form del passeggero
+// Una casella numerica per i km
 Una tendina per selezionare la fascia d'età (Maggiorenne, Minorenne, Over65)
 NON E' NECESSARIA ALCUNA VALIDAZIONE
 
@@ -28,16 +28,16 @@ Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori
 
 */
 
-/*
+
 // ! Chiediamo il numero di chilometri che l'utente ha intenzione di percorrere
 
-var x = prompt("Quanti chilometri vuoi fare?");
+// var x = prompt("Quanti chilometri vuoi fare?");
 var userKm = parseFloat(x);
 console.log(userKm);
 
 
 // ! Chiediamo l'età del passeggero
-var y = prompt("Quanti hanni hai?");
+// var y = prompt("Quanti hanni hai?");
 var userAge = parseFloat(y);
 console.log(userAge)
 
@@ -63,5 +63,3 @@ discountedPrice = discountedPrice.toFixed(2);
 finalPrice = document.getElementById("price");
 finalPrice.innerText = discountedPrice;
 console.log(discountedPrice);
-
-*/

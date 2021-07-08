@@ -11,3 +11,8 @@
 h4 {
     color: darkolivegreen;
 }
+
+#age {
+    border: 2px solid black;
+    padding: 2px 25px;
+}
