@@ -78,7 +78,7 @@ generate.addEventListener('click',
         discountElement.innerText = tariffa;
         carElement.innerHTML = Math.floor(Math.random() * 12) + 1;
         codeCPElement.innerText = "95876";
-        ticketPriceElement.innerHTML = discountedPrice;
+        ticketPriceElement.innerHTML = discountedPrice + " €";
     });
 
 // ?CLICK RESET
@@ -86,7 +86,6 @@ reset.addEventListener('click',
     function () {
         nameField.value = "";
         ageField.value = "";
-        kmsField.value = 0;
 
         userNameElement.innerHTML = "";
         discountElement.innerText = "";
