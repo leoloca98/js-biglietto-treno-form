@@ -10,7 +10,63 @@
 </head>
 
 <body>
+    <div class="container bg-magenta">
+        <!-- *Stampiamo il prezzo del biglietto* -->
+        <section id="price">
+            <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+            <div class="offset-1 row justify-content-around bg-white">
+                <div class="col-3">
+                    <h4>Nome Cognome</h4>
+                    <label for="full-name"></label>
+                    <input type="text" id="full-name">
+                </div>
+                <div class="col-3">
+                    <h4>Km da percorrere</h4>
+                    <label for="kms"></label>
+                    <input type="number" id="kms" value="10">
+                </div>
+                <div class="col-3">
+                    <h4>Fascia d'età</h4>
+                    <label for="age"></label>
+                    <input type="text" id="age">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="button" name="Genera" id="generate">
+                </div>
+                <div class="col">
+                    <input type="button" name="Resetta" id="reset">
+                </div>
+            </div>
 
+        </section>
+        <section id="ticket">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="offset-1 row border-y">
+                <div class="row-4 bg-grey">
+                    <h3>NOME DEL PASSEGGERO</h3>
+                    <span id="user-name"></span>
+                </div>
+                <div class="row-4">
+                    <h4>Offerta</h4>
+                    <span id="sales"></span>
+                </div>
+                <div class="row">
+                    <h4>Carrozza</h4>
+                    <span id="car"></span>
+                </div>
+                <div class="row">
+                    <h4>Codice CP</h4>
+                    <span>97928</span>
+                </div>
+                <div class="row">
+                    <h4>Costo biglietto</h4>
+                    <span id="ticket-price"></span>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>

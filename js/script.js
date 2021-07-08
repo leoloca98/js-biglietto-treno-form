@@ -27,3 +27,39 @@ Nascondiamo la sezione del biglietto se non è ancora stato generato il bigliett
 Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori originali.
 
 */
+
+
+// ! Chiediamo il numero di chilometri che l'utente ha intenzione di percorrere
+
+var x = prompt("Quanti chilometri vuoi fare?");
+var userKm = parseFloat(x);
+console.log(userKm);
+
+
+// ! Chiediamo l'età del passeggero
+var y = prompt("Quanti hanni hai?");
+var userAge = parseFloat(y);
+console.log(userAge)
+
+// ! Calcoliamo il prezzo del biglietto (0.21€ al km)
+var initialPrice = (0.21 * userKm);
+console.log(initialPrice);
+
+// ! Controlliamo l'età dell'utente
+var discountedPrice;
+var finalPrice;
+// Se Minorenne
+if (userAge < 18) {
+    discountedPrice = initialPrice - (initialPrice * 0.2);
+    // Se over 65
+} else if (userAge >= 65) {
+    discountedPrice = initialPrice - (initialPrice * 0.4);
+} else if (userAge >= 18 && userAge < 65) {
+    discountedPrice = initialPrice;
+}
+
+discountedPrice = discountedPrice.toFixed(2);
+
+finalPrice = document.getElementById("price");
+finalPrice.innerText = discountedPrice;
+console.log(discountedPrice);
