@@ -26,14 +26,14 @@
                             </div>
                             <div class="col">
                                 <h4>Km da percorrere</h4>
-                                <input type="number" id="kms" value="10" class="border-dark">
+                                <input type="number" id="kms" min="10" step="5" class="border-dark text-center">
                             </div>
                             <div class="col">
                                 <h4>Fascia d'età</h4>
-                                <select id="age" class="border-dark">
+                                <select id="age">
                                     <option>Minorenne</option>
                                     <option>Maggiorenne</option>
-                                    <option>Over 65</option>
+                                    <option>Over-65</option>
                                 </select>
                             </div>
                         </div>
@@ -43,11 +43,11 @@
                             <div class="row bg-white justify-content-center my-5">
                                 <div class="col">
                                     <input type="button" class="btn-primary rounded-pill px-3 py-1" value="Genera"
-                                        name="Genera" id="generate">
+                                        id="generate">
                                 </div>
                                 <div class="col">
                                     <input type="button" class="btn-primary rounded-pill px-3 py-1" value="Resetta"
-                                        name="Resetta" id="reset">
+                                        id="reset">
                                 </div>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                     </div>
                     <div class="col">
                         <h4>Offerta</h4>
-                        <span id="sales" class="fs-5"></span>
+                        <span id="discount" class="fs-5"></span>
                     </div>
                     <div class="col">
                         <h4>Carrozza</h4>
@@ -74,7 +74,7 @@
                     </div>
                     <div class="col">
                         <h4>Codice CP</h4>
-                        <span class="fs-5"></span>
+                        <span id="code-cp" class="fs-5"></span>
                     </div>
                     <div class="col">
                         <h4>Costo biglietto</h4>
