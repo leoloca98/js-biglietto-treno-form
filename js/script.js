@@ -43,6 +43,7 @@ var discountElement = document.getElementById("discount");
 var carElement = document.getElementById("car");
 var codeCPElement = document.getElementById("code-cp");
 var ticketPriceElement = document.getElementById("ticket-price");
+var ticketSection = document.getElementById("ticket");
 
 // ?TICKET-PRICE
 var discountedPrice = 0;
@@ -74,16 +75,20 @@ generate.addEventListener('click',
         }
 
         discountedPrice = discountedPrice.toFixed(2);
+
         userNameElement.innerHTML = nameValue;
         discountElement.innerText = tariffa;
         carElement.innerHTML = Math.floor(Math.random() * 12) + 1;
         codeCPElement.innerText = "95876";
         ticketPriceElement.innerHTML = discountedPrice + " €";
+
+        ticketSection.classList.remove('hidden');
     });
 
 // ?CLICK RESET
 reset.addEventListener('click',
     function () {
+
         nameField.value = "";
         ageField.value = "";
 
@@ -92,6 +97,9 @@ reset.addEventListener('click',
         carElement.innerHTML = "";
         codeCPElement.innerText = "";
         ticketPriceElement.innerHTML = "";
-    });
+
+        ticketSection.classList.add('hidden');
+    }
+);
 
 
