@@ -28,7 +28,7 @@ Aggiungiamo una funzione che ci permetta di resettare i campi del form ai valori
 
 */
 
-
+/*
 // ! Chiediamo il numero di chilometri che l'utente ha intenzione di percorrere
 
 var x = prompt("Quanti chilometri vuoi fare?");
@@ -63,3 +63,5 @@ discountedPrice = discountedPrice.toFixed(2);
 finalPrice = document.getElementById("price");
 finalPrice.innerText = discountedPrice;
 console.log(discountedPrice);
+
+*/
