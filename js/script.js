@@ -48,14 +48,18 @@ var ticketPriceElement = document.getElementById("ticket-price");
 var discountedPrice = 0;
 var finalPrice = 0;
 var tariffa = "";
+var nameValue = "";
+var ageValue = "";
+var kmsValue = 0;
+var initialPrice = 0;
 
-// ?CLICK
+// ?CLICK GENERATE
 generate.addEventListener('click',
     function () {
-        var nameValue = nameField.value;
-        var ageValue = ageField.value;
-        var kmsValue = kmsField.value;
-        var initialPrice = (0.21 * kmsValue);
+        nameValue = nameField.value;
+        ageValue = ageField.value;
+        kmsValue = kmsField.value;
+        initialPrice = (0.21 * kmsValue);
 
         if (ageValue == "Minorenne") {
             discountedPrice = initialPrice - (initialPrice * 0.2);
@@ -75,6 +79,20 @@ generate.addEventListener('click',
         carElement.innerHTML = Math.floor(Math.random() * 12) + 1;
         codeCPElement.innerText = "95876";
         ticketPriceElement.innerHTML = discountedPrice;
+    });
+
+// ?CLICK RESET
+reset.addEventListener('click',
+    function () {
+        nameField.value = "";
+        ageField.value = "";
+        kmsField.value = 0;
+
+        userNameElement.innerHTML = "";
+        discountElement.innerText = "";
+        carElement.innerHTML = "";
+        codeCPElement.innerText = "";
+        ticketPriceElement.innerHTML = "";
     });
 
 
